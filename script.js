@@ -13,21 +13,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ========== Projects Filter Tabs ==========
 // Initialize now (we are already inside a DOMContentLoaded wrapper above)
+const tabsWrap = document.querySelector('.proj-tabs');
 const tabs = document.querySelectorAll('.proj-tab');
 const cards = document.querySelectorAll('.projects-grid .project-card');
-if (tabs.length && cards.length) {
-  tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      const f = btn.dataset.filter || 'all';
-      cards.forEach(card => {
-        const cat = card.getAttribute('data-cat');
-        const show = (f === 'all') || (cat === f);
-        card.style.display = show ? '' : 'none';
-      });
-    });
+function applyProjectsFilter(filter) {
+  const f = filter || 'all';
+  tabs.forEach(t => {
+    const active = t.dataset.filter === f || (f === 'all' && t.dataset.filter === 'all');
+    t.classList.toggle('is-active', active);
+    t.setAttribute('aria-pressed', active ? 'true' : 'false');
   });
+  cards.forEach(card => {
+    const cat = card.getAttribute('data-cat');
+    const show = (f === 'all') || (cat === f);
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+if (tabsWrap && tabs.length && cards.length) {
+  tabsWrap.addEventListener('click', (e) => {
+    const btn = e.target.closest('.proj-tab');
+    if (!btn) return;
+    applyProjectsFilter(btn.dataset.filter || 'all');
+  });
+  const initialBtn = document.querySelector('.proj-tab.is-active') || tabs[0];
+  const initialFilter = initialBtn ? (initialBtn.dataset.filter || 'all') : 'all';
+  applyProjectsFilter(initialFilter);
 }
 
 // ========== I18N (Arabic/English Toggle) ==========
@@ -475,14 +486,16 @@ function initHeroSlider() {
     });
 }
 
-    // Close menu when a link is clicked
+    // Close menu when a link is clicked (guard if menu/elements not present)
     const navLinks = document.querySelectorAll('.nav-menu a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
+    if (navLinks.length && navMenu && hamburger) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
         });
-    });
+    }
 
     // ========== Hero Slider Init ==========
     initHeroSlider();
