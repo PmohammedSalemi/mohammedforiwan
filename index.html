@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب ايوان - للاستشارات الهندسية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-group">
+                <div class="nav-brand nav-brand-inline">
+                    <a href="imgs/logo.png" class="logo-link" title="الرئيسية">
+                        <img src="imgs/logo.png" alt="شعار مكتب ايوان">
+                    </a>
+            
+                </div>
+            </div>
+            <div class="nav-opposite">
+                <button id="lang-toggle" type="button" aria-label="Change language" class="btn-lang">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Modern Overlay) -->
+    <section class="hero-modern" id="home">
+        <div class="container hero-inner">
+            <h1 class="headline" data-i18n="hero.headline">تصميم المستقبل برؤية هندسية دقيقة</h1>
+            <a href="#contact" class="btn-primary" data-i18n="hero.cta">تواصل معنا الآن</a>
+            <div class="cta">
+                
+            </div>
+        </div>
+    </section>
+    <!-- About Section (Modern Two-Column) -->
+    <section class="about about-modern" id="about">
+        <div class="container about-wrap">
+            <div class="about-text">
+                <h2 data-i18n="about.title">من نحن</h2>
+                <p data-i18n="about.p1">مكتب ايوان  للاستشارات الهندسية هو مكتب  رائد في تقدم حلول هندسية متكاملة، تأسس لتلبية احتياجات العملاء من خلال فريق متخصص ذو خبرة.</p>
+                <p data-i18n="about.p2">من خدماتنا: التصميم الهندسي، الإشراف على المشاريع، دراسات الجدوى، والتصميم المعماري وخدمات المساحة.</p>
+                <p data-i18n="about.p3">نعمل مع القطاعين الحكومي والخاص، ملتزمين بالجودة والابتكار ونفخر بسجلنا في إنجاز المشاريع وبناء شراكات طويلة الأمد.</p>
+            </div>
+            <div class="about-media">
+                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="About image" />
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Objectives Section -->
+    <section class="objectives">
+        <div class="container">
+            <h2 data-i18n="obj.title">أهدافنا</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h3 data-i18n="obj.excellence">التميز</h3>
+                    <p data-i18n="obj.excellence_desc">تقديم خدمات بمستويات عالية من الجودة والاحترافية</p>
+                </div>
+                <div class="objective-card">
+                    <h3 data-i18n="obj.innovation">الابتكار</h3>
+                    <p data-i18n="obj.innovation_desc">استخدام أحدث التقنيات والحلول الهندسية المبتكرة</p>
+                </div>
+                <div class="objective-card">
+                    <h3 data-i18n="obj.sustainability">الاستدامة</h3>
+                    <p data-i18n="obj.sustainability_desc">التركيز على التصاميم المستدامة والمسؤولية البيئية</p>
+                </div>
+                <div class="objective-card">
+                    <h3 data-i18n="obj.community">التنمية المجتمعية</h3>
+                    <p data-i18n="obj.community_desc">المساهمة في تطوير المجتمع والاقتصاد المحلي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Modern Tiles) -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 data-i18n="services.title">خدماتنا</h2>
+            <div class="consulting-grid">
+                <a class="consulting-card" href="service.html?id=architectural-design">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3 data-i18n="card.architectural-design">التصميم المعماري</h3>
+                </a>
+                <a class="consulting-card" href="service.html?id=interior-design">
+                    <i class="fa-solid fa-chair"></i>
+                    <h3 data-i18n="services.interior.title">التصميم الداخلي</h3>
+                </a>
+                <a class="consulting-card" href="service.html?id=urban-planning">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3 data-i18n="services.urban.title">التخطيط الحضري</h3>
+                </a>
+                <a class="consulting-card" href="service.html?id=engineering-supervision">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <h3 data-i18n="card.engineering-supervision">الإشراف الهندسي</h3>
+                </a>
+                <a class="consulting-card" href="service.html?id=project-management">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3 data-i18n="services.pm.title">إدارة المشاريع</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Projects Section (with Tabs) -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 data-i18n="projects.title">أعمالنا</h2>
+            <div class="proj-tabs" role="tablist">
+                <button class="proj-tab is-active" data-filter="all" data-i18n="projects.filter.all">الكل</button>
+                <button class="proj-tab" data-filter="res" data-i18n="projects.filter.residential">سكني</button>
+                <button class="proj-tab" data-filter="com" data-i18n="projects.filter.commercial">تجاري</button>
+                <button class="proj-tab" data-filter="adm" data-i18n="projects.filter.administrative">إداري</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Residential (3) -->
+                <div class="project-card" data-cat="res">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop&v=2" alt="Residential 1">
+                    <h3 data-i18n="projects.residential">مشروع سكني</h3>
+                </div>
+                <div class="project-card" data-cat="res">
+                    <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1920&auto=format&fit=crop&v=2" alt="Residential 2">
+                    <h3 data-i18n="projects.residential">مشروع سكني</h3>
+                </div>
+                <div class="project-card" data-cat="res">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1920&auto=format&fit=crop&v=2" alt="Residential 3">
+                    <h3 data-i18n="projects.residential">مشروع سكني</h3>
+                </div>
+
+                <!-- Commercial (3) -->
+                <div class="project-card" data-cat="com">
+                    <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop&v=2" alt="Commercial 1">
+                    <h3 data-i18n="projects.commercial">مشروع تجاري</h3>
+                </div>
+                <div class="project-card" data-cat="com">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop&v=2" alt="Commercial 2">
+                    <h3 data-i18n="projects.commercial">مشروع تجاري</h3>
+                </div>
+                <div class="project-card" data-cat="com">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop&v=2" alt="Commercial 3">
+                    <h3 data-i18n="projects.commercial">مشروع تجاري</h3>
+                </div>
+
+                <!-- Administrative (3) -->
+                <div class="project-card" data-cat="adm">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1200&auto=format&fit=crop&v=2" alt="Administrative 1">
+                    <h3 data-i18n="projects.administrative">مشروع إداري</h3>
+                </div>
+                <div class="project-card" data-cat="adm">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1920&auto=format&fit=crop&v=2" alt="Administrative 2">
+                    <h3 data-i18n="projects.administrative">مشروع إداري</h3>
+                </div>
+                <div class="project-card" data-cat="adm">
+                    <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop&v=2" alt="Administrative 3">
+                    <h3 data-i18n="projects.administrative">مشروع إداري</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+       <!-- Interior Design Gallery -->
+    <section class="interior-gallery" id="interior">
+        <div class="container">
+            <h2 data-i18n="interior.title">التصميم الداخلي</h2>
+            <div class="interior-grid">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 1">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 2">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 3">
+                <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 4">
+                <img src="https://images.unsplash.com/photo-1475855581690-80accde3ae2b?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 5">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 6">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 8">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 9">
+                <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 10">
+                <img src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1200&auto=format&fit=crop" alt="تصميم داخلي 11">
+                </div>
+        </div>
+    </section>
+    
+    <!-- Exterior Design Gallery -->
+    <section class="interior-gallery" id="exterior">
+        <div class="container">
+            <h2 data-i18n="exterior.title">التصميم الخارجي</h2>
+            <div class="interior-grid">
+                <img src="imgs/download.jpg" alt="تصميم خارجي 1">
+                <img src="imgs/download (1).jpg" alt="تصميم خارجي 2">
+                <img src="imgs/download (2).jpg" alt="تصميم خارجي 3">
+                <img src="imgs/download (2).jpg" alt="تصميم خارجي 3">
+                <img src="imgs/download (3).jpg" alt="تصميم خارجي 4">
+                <img src="imgs/download (4).jpg" alt="تصميم خارجي 5">
+                <img src="imgs/download (5).jpg" alt="تصميم خارجي 6">
+                <img src="imgs/download (6).jpg" alt="تصميم خارجي 7">
+                <img src="imgs/download (7).jpg" alt="تصميم خارجي 8">
+                <img src="imgs/download (8).jpg" alt="تصميم خارجي 9">
+
+            </div>
+        </div>
+    </section>
+    
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop"></div>
+        <button class="lightbox-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-nav prev" aria-label="السابق"><i class="fa-solid fa-chevron-right"></i></button>
+        <img class="lightbox-image" alt="عرض الصورة" />
+        <button class="lightbox-nav next" aria-label="التالي"><i class="fa-solid fa-chevron-left"></i></button>
+    </div>
+    
+    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 data-i18n="testimonials.title">آراء عملاؤنا</h2>
+            <div class="testimonials-row">
+                <div class="testi-viewport">
+                    <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p data-i18n="testimonials.q1">"خدمات متميزة واحترافية جداً، فريق عمل متخصص وملتزم بالجودة"</p>
+                    <h4 data-i18n="testimonials.c1">- عميل راضٍ</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p data-i18n="testimonials.q2">"تعاملنا مع مكتب ايوان كان تجربة رائعة، أنصح بهم بشدة"</p>
+                    <h4 data-i18n="testimonials.c2">- عميل مميز</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"سرعة في الإنجاز ودقة في التفاصيل، تجربة ممتازة."</p>
+                    <h4>- عميل شركة مقاولات</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"فريق محترف ومتعاون، التصميم كان فوق التوقعات."</p>
+                    <h4>- عميل تطوير عقاري</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"التواصل كان واضحاً طوال المشروع، والنتيجة رائعة."</p>
+                    <h4>- عميل فردي</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Request Section -->
+    <section class="quote-request" id="quote">
+        <div class="container">
+            <h2 data-i18n="quote.title">طلب عرض سعر</h2>
+            <form class="quote-form" action="http://localhost/web/backend/submit_quote.php" method="POST" novalidate>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="اسمك" data-i18n-placeholder="form.name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="بريدك الإلكتروني" data-i18n-placeholder="form.email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="رقم الهاتف" data-i18n-placeholder="form.phone" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="وصف المشروع" data-i18n-placeholder="form.message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit" data-i18n="form.submit">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 data-i18n="contact.title">تواصل معنا</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3 data-i18n="contact.phone">الهاتف</h3>
+                    <p><a href="tel:+967771773828">+967 771 773 828</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3 data-i18n="contact.email">البريد الإلكتروني</h3>
+                    <p><a href="mailto:pmohammadsalemi@gmail.com">pmohammadsalemi@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-whatsapp"></i>
+                    <h3 data-i18n="contact.whatsapp">واتس آب</h3>
+                    <p><a href="https://wa.me/967771773828" target="_blank" rel="noopener">+967 771 773 828</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="branches">
+        <div class="container">
+            <h2 data-i18n="branches.title">موقعنا</h2>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <h3 data-i18n="branches.riyadh_granada.title">الرياض - فرع غرناطة</h3>
+                    <p data-i18n="branches.riyadh_granada.addr">حي غرناطة - طريق الإمام سعود</p>
+                </div>
+            </div>
+            <div class="map-wrap">
+                <iframe class="map-frame" title="الموقع على الخريطة" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.128262084664!2d46.730!3d24.713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f01b9c8d0a3a1%3A0x0000000000000000!2z2KfZhNmF2K_ZiNin2YTYqtmI2LEg2KfZhNmF2LHZiNiy2Kkg2KfZhNiq2KfZhNis2KfZhdi52Kkg2KfZhNiz2YrZhtmK2YQ!5e0!3m2!1sar!2ssa!4v1700000000000">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.links">روابط مهمة</h3>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+                        <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+                        <li><a href="#projects" data-i18n="nav.projects">المشاريع</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contact">تواصل معنا</h3>
+                    <p><span data-i18n="contact.phone">الهاتف</span>: <a href="tel:+967771773828">+967 771 773 828</a></p>
+                    <p><span data-i18n="contact.email">البريد الإلكتروني</span>: <a href="mailto:pmohammadsalemi@gmail.com">pmohammadsalemi@gmail.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.follow">تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#" title="فيسبوك"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="إنستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="لينكد إن"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.hours">اوقات الدوام</h3>
+                    <ul class="hours-list">
+                        <li data-i18n="footer.hours.weekdays">من السبت إلى الخميس: <span class="accent">9 صباحاً</span> - <span class="accent">9 مساءً</span></li>
+                        <li data-i18n="footer.hours.friday">الجمعة: <span class="accent">مغلق</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <h4 data-i18n="footer.copy">جميع الحقوق محفوظة لـ مكتب ايوان للاستشارات الهندسية | تصميم وتطوير</h4>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
